@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/base_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/base_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/base_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="标题" />
+
+
+        <TextView
+            android:id="@+id/base_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="visible"
+            tools:text="账号名称" />
+
+
+        <TextView
+            android:id="@+id/base_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            tools:text="确定" />
+
+
+        <View
+            android:id="@+id/base_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#E5E5E5" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+
+</LinearLayout>
